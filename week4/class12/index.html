@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function celsiusToFahrenheit(celsius) {
+        let celsius2 = celsius * 1.8 + 32;
+        console.log(celsius + "C is " + celsius2 + " F");
+        return celsius2;
+      }
+
+      function fahrenheitToCelsius(fahrenheit) {
+        let fahrenheit2 = (fahrenheit - 32) / 1.8;
+        console.log(fahrenheit + "F is " + fahrenheit2 + " C");
+        return fahrenheit;
+      }
+
+      let fahrenheit = prompt("Enter a number for farenheit to celsius");
+      fahrenheitToCelsius(fahrenheit);
+
+      let celsius = prompt("Enter a number for celsius to fahrenhiet");
+      celsiusToFahrenheit(celsius);
+
+      //   const person = {
+      //     firstName: "Joe",
+      //     age: 14,
+      //     sayFullName: function () {
+      //       console.log(this.firstName + this.age);
+      //     },
+      //     lastName: "mama",
+      //     hairColor: "black & white",
+      //     hairattribute: function () {
+      //       console.log(
+      //         this.firstName + this.lastName + " has " + this.hairColor + " hair"
+      //       );
+      //     },
+      //     height: "6'3",
+      //     weight: "140",
+      //     favoriteSnack: "Pringles",
+      //     description: function () {
+      //       console.log(
+      //         this.firstName +
+      //           this.lastName +
+      //           "'s height is " +
+      //           this.height +
+      //           " and his weight is " +
+      //           this.weight +
+      //           " and his favorite snack is " +
+      //           this.favoriteSnack
+      //       );
+      //     },
+      //   };
+
+      //   person.sayFullName();
+      //   person.hairattribute();
+      //   person.description();
+    </script>
+  </body>
+</html>

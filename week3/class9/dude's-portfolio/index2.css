@@ -1,0 +1,240 @@
+#light-mode {
+  height: 2000px;
+  width: 1728px;
+  background-color: #e9ebec;
+  overflow-x: hidden;
+  margin-left: 1280px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#sunflower {
+  height: 80px;
+  width: 80px;
+  padding-left: 800px;
+  padding-top: 30px;
+}
+
+#Bios {
+  display: flex;
+  flex-direction: row;
+}
+
+#profile-pic {
+  height: 192px;
+  width: 192px;
+  padding-left: 450px;
+  margin-top: 65px;
+}
+
+#name {
+  font-family: Arial;
+  font-size: 60px;
+  color: #3d3d3d;
+  padding-left: 120px;
+}
+
+#job {
+  font-family: Arial;
+  font-size: 33px;
+  color: #3d3d3d;
+  padding-left: 120px;
+  margin-top: -40px;
+}
+
+#brand1 {
+  height: 36px;
+  width: 36px;
+  padding-left: 120px;
+  margin-top: -10px;
+}
+
+#brand2 {
+  height: 36px;
+  width: 36px;
+  padding-left: 30px;
+}
+
+#brand3 {
+  height: 32px;
+  width: 32px;
+  padding-left: 30px;
+}
+
+#brand4 {
+  height: 36px;
+  width: 47px;
+  padding-left: 30px;
+}
+
+#about {
+  font-family: Arial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-left: 500px;
+  padding-top: 48px;
+  width: 634px;
+  height: 142px;
+}
+
+#work p {
+  margin: 0px;
+  padding: 0px;
+  width: 180px;
+}
+
+#time {
+  font-size: x-large;
+}
+
+#time2 {
+  width: 200px;
+  font-size: x-large;
+}
+
+#time3 {
+  font-size: x-large;
+}
+
+.amount {
+  width: 130px;
+  height: 102px;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 618px;
+  padding-left: 520px;
+  padding-top: 47px;
+}
+
+#download {
+  background-color: #fbd144;
+  height: 80px;
+  width: 290px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#text-in-button {
+  font-size: x-large;
+  font-family: Arial;
+  padding-left: 40px;
+}
+
+#download-icon {
+  height: 50px;
+  width: 50px;
+}
+
+#contact {
+  background-color: white;
+  height: 80px;
+  width: 290px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#text-in-button2 {
+  font-size: x-large;
+  font-family: Arial;
+}
+
+#tabs {
+  padding-left: 450px;
+  padding-top: 75px;
+}
+
+#tab-buttons {
+  height: 110px;
+  width: 760px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+#tab1 {
+  background-color: #d7d7d7;
+  height: 80px;
+  width: 351.45px;
+  border-radius: 10px;
+}
+
+#tab1text {
+  color: black;
+  font-family: Arial;
+  font-size: x-large;
+}
+
+#tab2 {
+  background-color: white;
+  height: 80px;
+  width: 351.45px;
+  border: none;
+}
+
+#tab2text {
+  color: black;
+  font-family: Arial;
+  font-size: x-large;
+}
+
+#projects {
+  height: 826px;
+  width: 757px;
+  padding-top: 65px;
+  padding-left: 450px;
+}
+
+.images {
+  height: 226px;
+  width: 362px;
+}
+
+#row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 757px;
+  margin-bottom: 48px;
+}
+
+#row2 {
+  display: flex;
+  justify-content: space-between;
+  width: 757px;
+  margin-bottom: 48px;
+}
+
+#row3 {
+  display: flex;
+  justify-content: space-between;
+  width: 757px;
+}
+
+#bottom-text {
+  padding-top: 78px;
+  height: 33px;
+  width: 463px;
+  padding-left: 640px;
+}
+
+#btext {
+  color: black;
+  font-size: large;
+  font-family: Arial;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="weather">Weather</h1>
+    <input type="number" placeholder="type a number" id="number-input" />
+    <button id="enter-btn">Enter</button>
+    <img src="" alt="" id="image" />
+
+    <script>
+      document
+        .getElementById("enter-btn")
+        .addEventListener("click", function () {
+          let result = document.getElementById("number-input").value;
+
+          if (result >= 100) {
+            document.getElementById("weather").innerHTML = "too hot";
+            document.getElementById("image").src =
+              "https://images.unsplash.com/photo-1618325508550-951512a1e82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmlyZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80";
+            document.getElementById("weather").style.color = "red";
+            document.getElementById("image").style.height = "100px";
+            document.getElementById("image").style.width = "100px";
+          } else if (result > 75 && result < 100) {
+            document.getElementById("weather").innerHTML = "warm";
+            document.getElementById("image").src =
+              "https://media.istockphoto.com/id/1130636356/photo/sunset-over-mountain-with-cosmos-blooming.jpg?s=612x612&w=0&k=20&c=0fK0C07rR3kqX4C9PLhqNjxSs6d6vSTMPTkPlD-CybQ=";
+            document.getElementById("weather").style.color = "orange";
+            document.getElementById("image").style.height = "100px";
+            document.getElementById("image").style.width = "100px";
+          } else {
+            document.getElementById("weather").innerHTML = "cold";
+            document.getElementById("image").src =
+              "https://t3.ftcdn.net/jpg/02/98/03/22/360_F_298032209_YD4pFLDyzMyqBzso5xF5USR05hxqGuXf.jpg";
+            document.getElementById("image").style.height = "100px";
+            document.getElementById("image").style.width = "100px";
+            document.getElementById("weather").style.color = "blue";
+          }
+        });
+    </script>
+  </body>
+</html>

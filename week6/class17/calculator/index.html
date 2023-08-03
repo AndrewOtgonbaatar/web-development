@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="top-part">
+        <a href="https://playvalorant.com/en-us/" target="_blank"
+          ><img
+            src="https://preview.redd.it/nts5cr5g7od61.png?width=1182&format=png&auto=webp&s=bf4b54e0477a6a8c802b560a12be66e954bcf396"
+            alt="logo"
+            id="logo"
+        /></a>
+        <div id="numbers">0</div>
+      </div>
+      <div id="lower-part">
+        <div class="row">
+          <button class="first-three" id="AC" onclick="(remove())">AC</button>
+          <button class="first-three" id="plus-minus" onclick="dell()">
+            C
+          </button>
+          <button class="first-three" id="percent" onclick="(percentages('%'))">
+            %
+          </button>
+          <button
+            class="orange-button"
+            id="divide"
+            onclick="(appendToTheString('/'))"
+          >
+            ÷
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="number-button"
+            id="one"
+            onclick="(appendToTheString('1'))"
+          >
+            1
+          </button>
+          <button
+            class="number-button"
+            id="two"
+            onclick="(appendToTheString('2'))"
+          >
+            2
+          </button>
+          <button
+            class="number-button"
+            id="three"
+            onclick="(appendToTheString('3'))"
+          >
+            3
+          </button>
+          <button
+            class="orange-button"
+            id="multiply"
+            onclick="(appendToTheString('*'))"
+          >
+            X
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="number-button"
+            id="four"
+            onclick="(appendToTheString('4'))"
+          >
+            4
+          </button>
+          <button
+            class="number-button"
+            id="five"
+            onclick="(appendToTheString('5'))"
+          >
+            5
+          </button>
+          <button
+            class="number-button"
+            id="six"
+            onclick="(appendToTheString('6'))"
+          >
+            6
+          </button>
+          <button
+            class="orange-button"
+            id="minus"
+            onclick="(appendToTheString('-'))"
+          >
+            -
+          </button>
+        </div>
+        <div class="row">
+          <button
+            class="number-button"
+            id="seven"
+            onclick="(appendToTheString('7'))"
+          >
+            7
+          </button>
+          <button
+            class="number-button"
+            id="eight"
+            onclick="(appendToTheString('8'))"
+          >
+            8
+          </button>
+          <button
+            class="number-button"
+            id="nine"
+            onclick="(appendToTheString('9'))"
+          >
+            9
+          </button>
+          <button
+            class="orange-button"
+            id="addition"
+            onclick="(appendToTheString('+'))"
+          >
+            +
+          </button>
+        </div>
+        <div class="row">
+          <button id="long-button" onclick="(appendToTheString('0'))">0</button
+          ><button
+            class="number-button"
+            id="decimal"
+            onclick="(appendToTheString('.'))"
+          >
+            .</button
+          ><button class="orange-button" id="equals" onclick="(calculate())">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

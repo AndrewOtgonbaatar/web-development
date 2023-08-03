@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://fit.sanfordhealth.org/-/media/fit/images/fitgames/25-skip-the-screen.jpg"
+      alt="background"
+      style="
+        z-index: -10;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        left: 0px;
+        top: 0px;
+        overflow-x: hidden;
+      "
+    />
+    <div
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+        width: 100vw;
+      "
+    >
+      <div id="the-rock">
+        <img
+          src="https://purepng.com/public/uploads/large/dwayne-johnson-6xk.png"
+          alt="Dwayne"
+          height="90px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/19/30/11/1930114b419348caf3b259cfdf25c97a.png"
+          alt="toilet-paper"
+          height="80px"
+        />
+      </div>
+      <div>
+        <img
+          src="https://png.pngtree.com/png-clipart/20210912/original/pngtree-sewing-award-winning-golden-scissors-png-image_6753489.jpg"
+          alt="scissors"
+          height="80px"
+        />
+      </div>
+    </div>
+
+    <div style="width: 100vw; display: flex; justify-content: space-evenly">
+      <button
+        id="ROCK-button"
+        style="background-color: blanchedalmond; height: 60px; width: 100px"
+      >
+        ROCK
+      </button>
+
+      <button
+        id="PAPER-button"
+        style="height: 60px; width: 100px; background-color: white"
+      >
+        PAPER
+      </button>
+
+      <button
+        id="SCISSORS-button"
+        style="height: 60px; width: 100px; background-color: gold"
+      >
+        SCISSORS
+      </button>
+    </div>
+
+    <div
+      id="winners-display"
+      style="width: 100vw; display: flex; justify-content: center"
+    >
+      <h1>Rock, Paper, Scissors</h1>
+    </div>
+
+    <script>
+      function randomSelector() {
+        document
+          .getElementById("ROCK-button")
+          .addEventListener("click", function () {
+            const choices = ["rock", "paper", "scissors"];
+            const randomResult = choices[Math.floor(Math.random() * 3)];
+
+            if (randomResult == "rock") {
+              document.getElementById("winners-display").innerHTML = "tie";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "paper") {
+              document.getElementById("winners-display").innerHTML =
+                "YOU LOST BOZO!!!!!";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "scissors") {
+              document.getElementById("winners-display").innerHTML = "You Win";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            }
+          });
+
+        document
+          .getElementById("PAPER-button")
+          .addEventListener("click", function () {
+            const choices = ["rock", "paper", "scissors"];
+            const randomResult = choices[Math.floor(Math.random() * 3)];
+
+            if (randomResult == "rock") {
+              document.getElementById("winners-display").innerHTML = "You Win";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "paper") {
+              document.getElementById("winners-display").innerHTML = "Tie";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "scissors") {
+              document.getElementById("winners-display").innerHTML =
+                "YOU LOST BOZO";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            }
+          });
+
+        document
+          .getElementById("SCISSORS-button")
+          .addEventListener("click", function () {
+            const choices = ["rock", "paper", "scissors"];
+            const randomResult = choices[Math.floor(Math.random() * 3)];
+
+            if (randomResult == "rock") {
+              document.getElementById("winners-display").innerHTML =
+                "YOU LOST BOZO";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "paper") {
+              document.getElementById("winners-display").innerHTML = "You win";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            } else if (randomResult == "scissors") {
+              document.getElementById("winners-display").innerHTML = "Tie";
+              document.getElementById("winners-display").style.fontSize =
+                "90px";
+            }
+          });
+      }
+
+      randomSelector();
+    </script>
+  </body>
+</html>

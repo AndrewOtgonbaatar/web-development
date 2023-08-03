@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="(appendToTheString('1'))">1</button>
+    <button onclick="(appendToTheString('+'))">+</button>
+    <button onclick="(appendToTheString('3'))">3</button>
+    <button onclick="(calculate())">Calculate</button>
+    <script>
+      let answer = "";
+
+      function appendToTheString(x) {
+        answer = answer + x;
+        console.log(answer);
+      }
+
+      function calculate() {
+        console.log(eval(answer));
+      }
+    </script>
+  </body>
+</html>

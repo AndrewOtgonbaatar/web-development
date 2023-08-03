@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        padding-left: 100px;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+      "
+    >
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/012/933/017/small/wood-door-design-free-png.png"
+        alt="door0"
+        id="door1"
+      />
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/012/933/017/small/wood-door-design-free-png.png"
+        alt="door1"
+        id="door2"
+      />
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/012/933/017/small/wood-door-design-free-png.png"
+        alt="door2"
+        id="door3"
+      />
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/012/933/017/small/wood-door-design-free-png.png"
+        alt="door3"
+        id="door4"
+      />
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/012/933/017/small/wood-door-design-free-png.png"
+        alt="door4"
+        id="door5"
+      />
+    </div>
+    <div
+      style="
+        display: flex;
+        width: 1260px;
+        justify-content: space-between;
+        padding-left: 220px;
+      "
+    >
+      <p>Door 1</p>
+      <p>Door 2</p>
+      <p>Door 3</p>
+      <p>Door 4</p>
+      <p>Door 5</p>
+    </div>
+
+    <div style="width: 100vw; display: flex; justify-content: center">
+      <h1 id="display">CHOOSE THE RIGHT DOOR</h1>
+    </div>
+
+    <script>
+      document.getElementById("door1").addEventListener("click", function () {
+        const choices = ["door-1", "door-2", "door-3", "door-4", "door-5"];
+        const randomResult = choices[Math.floor(Math.random() * 5)];
+
+        if (randomResult == "door-1") {
+          document.getElementById("display").innerHTML = "YoU LIVED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-2") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-3") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-4") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-5") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        }
+      });
+
+      document.getElementById("door2").addEventListener("click", function () {
+        const choices = ["door-1", "door-2", "door-3", "door-4", "door-5"];
+        const randomResult = choices[Math.floor(Math.random() * 5)];
+
+        if (randomResult == "door-1") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("winners-display").style.fontSize = "90px";
+        } else if (randomResult == "door-2") {
+          document.getElementById("display").innerHTML = "You LIVED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-3") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-4") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-5") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        }
+      });
+
+      document.getElementById("door3").addEventListener("click", function () {
+        const choices = ["door-1", "door-2", "door-3", "door-4", "door-5"];
+        const randomResult = choices[Math.floor(Math.random() * 5)];
+
+        if (randomResult == "door-1") {
+          document.getElementById("display").innerHTML = "You DIED ";
+          document.getElementById("winners-display").style.fontSize = "90px";
+        } else if (randomResult == "door-2") {
+          document.getElementById("display").innerHTML = "You DIED !";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-3") {
+          document.getElementById("display").innerHTML = "You LIVED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-4") {
+          document.getElementById("display").innerHTML = "You DIED ";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-5") {
+          document.getElementById("display").innerHTML = "You DIED ";
+          document.getElementById("display").style.fontSize = "90px";
+        }
+      });
+
+      document.getElementById("door4").addEventListener("click", function () {
+        const choices = ["door-1", "door-2", "door-3", "door-4", "door-5"];
+        const randomResult = choices[Math.floor(Math.random() * 5)];
+
+        if (randomResult == "door-1") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("winners-display").style.fontSize = "90px";
+        } else if (randomResult == "door-2") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-3") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-4") {
+          document.getElementById("display").innerHTML = "You LIVED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-5") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        }
+      });
+
+      document.getElementById("door5").addEventListener("click", function () {
+        const choices = ["door-1", "door-2", "door-3", "door-4", "door-5"];
+        const randomResult = choices[Math.floor(Math.random() * 5)];
+
+        if (randomResult == "door-1") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("winners-display").style.fontSize = "90px";
+        } else if (randomResult == "door-2") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-3") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-4") {
+          document.getElementById("display").innerHTML = "You DIED";
+          document.getElementById("display").style.fontSize = "90px";
+        } else if (randomResult == "door-5") {
+          document.getElementById("display").innerHTML = "You LIVED";
+          document.getElementById("display").style.fontSize = "90px";
+        }
+      });
+    </script>
+  </body>
+</html>
